@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Vendor</title>
+</head>
+<body>
+    <h1>Add Vendor</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="contact_details">Contact Details:</label><br>
+        <textarea id="contact_details" name="contact_details"></textarea><br>
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address"></textarea><br>
+        <label for="vendor_code">Vendor Code:</label><br>
+        <input type="text" id="vendor_code" name="vendor_code"><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
+{% comment %} Temporary  {% endcomment %}
